@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "TryPhotino",
+    "classifications": [ "Photino", "html", "React", "Desktop" ],
+    "identity": "PhotinoSamples.VSCodeTemplates.HelloWorldReact",
+    "name": "Photino Samples HelloWorldReact",
+    "shortName": "photinoreact",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }   
+}

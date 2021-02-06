@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "TryPhotino",
+    "classifications": [ "Photino", "html", "Blazor", "Desktop" ],
+    "identity": "PhotinoSamples.VSCodeTemplates.HelloWorldBlazor",
+    "name": "Photino Samples HelloWorldBlazor",
+    "shortName": "photinoblazor",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }   
+}
