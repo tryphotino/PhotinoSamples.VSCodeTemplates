@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "TryPhotino",
+    "classifications": [ "Photino", "html", "Angular", "Desktop" ],
+    "identity": "PhotinoSamples.VSCodeTemplates.HelloPhotinoAngular",
+    "name": "Photino Samples HelloPhotinoAngular",
+    "shortName": "photinoangular",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }   
+}
