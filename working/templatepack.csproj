@@ -9,7 +9,7 @@
     <PackageId>TryPhotino.VSCode.Project.Templates</PackageId>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageType>Template</PackageType>
-    <PackageVersion>0.9.1</PackageVersion>
+    <PackageVersion>1.1.6</PackageVersion>
     <PackageProjectUrl>https:tryphotino.io</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tryphotino/photino.NET</RepositoryUrl>
     <Product>Photino Samples VSCode Templates</Product>
