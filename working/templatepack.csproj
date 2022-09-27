@@ -3,19 +3,19 @@
   <PropertyGroup>
     <Authors>TryPhotino</Authors>
     <Company>TryPhotino</Company>
-    <Copyright>TryPhotino 2021</Copyright>
+    <Copyright>TryPhotino 2022</Copyright>
     <Description>Project templates for VS Code to create Photino Sample applications. These templates can be used to start new Photino applications with the desired feature set. Visual Studio project templates are available separately.</Description>        
     <PackageId>TryPhotino.VSCode.Project.Templates</PackageId>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageType>Template</PackageType>
-    <PackageVersion>2.0.1</PackageVersion>
+    <PackageVersion>2.2.0</PackageVersion>
     <PackageProjectUrl>https:tryphotino.io</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tryphotino/PhotinoSamples.VSCodeTemplates</RepositoryUrl>
     <Product>Photino Samples VSCode Templates</Product>
     <Title>Photino Samples Project Templates for VS Code</Title>
     <PackageTags>dotnet-new;templates;photino;angular;vue;grpc;html;desktop</PackageTags>
 
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>

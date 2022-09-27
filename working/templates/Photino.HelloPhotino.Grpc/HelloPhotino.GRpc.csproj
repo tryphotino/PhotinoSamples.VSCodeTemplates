@@ -1,30 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
     <Platforms>AnyCPU</Platforms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\**" />
+    <None Update="wwwroot\**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Compile Remove="node_modules\**" />
-    <EmbeddedResource Remove="node_modules\**" />
     <None Remove="node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Grpc.AspNetCore" Version="2.39.0" />
-    <PackageReference Include="Grpc.AspNetCore.Web" Version="2.39.0" />
-    <PackageReference Include="Grpc.Core" Version="2.40.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.48.0" />
+    <PackageReference Include="Grpc.AspNetCore.Web" Version="2.48.0" />
+    <PackageReference Include="Grpc.Core" Version="2.46.3" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
-    <PackageReference Include="Photino.NET" Version="2.0.13" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="wwwroot\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Photino.NET" Version="2.2.2" />
   </ItemGroup>
 
   <ItemGroup>

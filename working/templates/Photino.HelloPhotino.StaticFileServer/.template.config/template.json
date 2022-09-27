@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "TryPhotino",
+    "classifications": ["Photino", "html", "fileserver", "CORS", "Desktop"],
+    "identity": "PhotinoSamples.VSCodeTemplates.HelloPhotinoStaticFileServer",
+    "name": "Photino Samples HelloPhotino Static File Server",
+    "shortName": "photinostaticfileserver",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    }
+}

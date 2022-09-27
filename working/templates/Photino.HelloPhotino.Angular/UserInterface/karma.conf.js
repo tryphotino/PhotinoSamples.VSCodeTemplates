@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/UserInterface'),
+      dir: require('path').join(__dirname, './coverage/photion.hello-photino.angular.ui'),
       subdir: '.',
       reporters: [
         { type: 'html' },
