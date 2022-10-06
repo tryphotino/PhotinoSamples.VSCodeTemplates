@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- Keep "Version" in sync with "PackageVersion"! -->
+    <Version>2.3.1</Version>
+    <Authors>TryPhotino</Authors>
+    <Company>TryPhotino</Company>
+    <Copyright>TryPhotino 2022</Copyright>
+
+    <Product>Photino Samples VSCode Templates</Product>
+    <Title>Photino Samples Project Templates for VS Code</Title>
+    <Description>
+      Project templates for VS Code to create Photino Sample applications.
+      These templates can be used to start new Photino applications with the desired feature set.
+      Visual Studio project templates are available separately.
+    </Description>
+
+    <PackageId>TryPhotino.VSCode.Project.Templates</PackageId>
+    <PackageType>Template</PackageType>
+    <PackageVersion>2.3.1</PackageVersion>
+    <PackageProjectUrl>https:tryphotino.io</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>dotnet-new;templates;photino;angular;vue;grpc;html;desktop</PackageTags>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+
+  <!--
+    Replace all ".gitkeep" files with empty files called "-.-" to preserve empty folders!
+    
+    @see "https://json.schemastore.org/template"
+    placeholderFilename	
+      description	"A filename that will be completely ignored except to indicate 
+                  that its containing directory should be copied. This allows creation of an 
+                  empty directory in the created template, by having a corresponding source 
+                  directory containing just the placeholder file. Completely empty directories 
+                  are ignored."
+      type	      "string"
+      default	     "-.-"
+  
+    ```bash
+    mv ./templates/Photino.HelloPhotino.Angular/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Angular/wwwroot/-.- &&\
+    mv ./templates/Photino.HelloPhotino.Angular/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Angular/Resources/wwwroot/-.- &&\
+    mv ./templates/Photino.HelloPhotino.Angular/UserInterface/src/assets/.gitkeep ./templates/Photino.HelloPhotino.Angular/UserInterface/src/assets/-.- &&\
+    mv ./templates/Photino.HelloPhotino.Vue/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Vue/wwwroot/-.- &&\
+    mv ./templates/Photino.HelloPhotino.Vue/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Vue/Resources/wwwroot/-.- &&\
+    mv ./templates/Photino.HelloPhotino.React/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.React/wwwroot/-.- &&\
+    mv ./templates/Photino.HelloPhotino.React/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.React/Resources/wwwroot/-.- &&\
+    mv ./templates/Photino.HelloPhotino.StaticFileServer/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.StaticFileServer/Resources/wwwroot/-.-
+    ```
+  -->
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\.vs\**;templates\**\.git\**;templates\**\node_modules\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
