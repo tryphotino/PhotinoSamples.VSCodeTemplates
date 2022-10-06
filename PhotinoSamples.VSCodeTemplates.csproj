@@ -34,8 +34,12 @@
   </PropertyGroup>
 
   <!--
-    Replace all ".gitkeep" files with empty files called "-.-" to preserve empty folders!
+    Replace all ".gitkeep" files with empty files called "preserve-empty-folder" to preserve empty folders!
     
+    Empty folders are ignored and not added to the template.
+    Since Photino.NET.Server expects the wwwroot folders to be
+    present we need to preserve them by adding an empty file.
+
     @see "https://json.schemastore.org/template"
     placeholderFilename	
       description	"A filename that will be completely ignored except to indicate 
@@ -46,15 +50,17 @@
       type	      "string"
       default	     "-.-"
   
+    Use when updating templates from samples ...
+
     ```bash
-    mv ./templates/Photino.HelloPhotino.Angular/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Angular/wwwroot/-.- &&\
-    mv ./templates/Photino.HelloPhotino.Angular/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Angular/Resources/wwwroot/-.- &&\
-    mv ./templates/Photino.HelloPhotino.Angular/UserInterface/src/assets/.gitkeep ./templates/Photino.HelloPhotino.Angular/UserInterface/src/assets/-.- &&\
-    mv ./templates/Photino.HelloPhotino.Vue/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Vue/wwwroot/-.- &&\
-    mv ./templates/Photino.HelloPhotino.Vue/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Vue/Resources/wwwroot/-.- &&\
-    mv ./templates/Photino.HelloPhotino.React/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.React/wwwroot/-.- &&\
-    mv ./templates/Photino.HelloPhotino.React/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.React/Resources/wwwroot/-.- &&\
-    mv ./templates/Photino.HelloPhotino.StaticFileServer/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.StaticFileServer/Resources/wwwroot/-.-
+    mv ./templates/Photino.HelloPhotino.Angular/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Angular/wwwroot/preserve-empty-folder &&\
+    mv ./templates/Photino.HelloPhotino.Angular/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Angular/Resources/wwwroot/preserve-empty-folder &&\
+    mv ./templates/Photino.HelloPhotino.Angular/UserInterface/src/assets/.gitkeep ./templates/Photino.HelloPhotino.Angular/UserInterface/src/assets/preserve-empty-folder &&\
+    mv ./templates/Photino.HelloPhotino.Vue/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Vue/wwwroot/preserve-empty-folder &&\
+    mv ./templates/Photino.HelloPhotino.Vue/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.Vue/Resources/wwwroot/preserve-empty-folder &&\
+    mv ./templates/Photino.HelloPhotino.React/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.React/wwwroot/preserve-empty-folder &&\
+    mv ./templates/Photino.HelloPhotino.React/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.React/Resources/wwwroot/preserve-empty-folder &&\
+    mv ./templates/Photino.HelloPhotino.StaticFileServer/Resources/wwwroot/.gitkeep ./templates/Photino.HelloPhotino.StaticFileServer/Resources/wwwroot/preserve-empty-folder
     ```
   -->
   <ItemGroup>
