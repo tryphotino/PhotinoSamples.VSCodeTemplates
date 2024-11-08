@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
     <!-- Keep "Version" in sync with "PackageVersion"! -->
-    <Version>2.3.1</Version>
+    <Version>3.2.3</Version>
     <Authors>TryPhotino</Authors>
     <Company>TryPhotino</Company>
-    <Copyright>TryPhotino 2022</Copyright>
+    <Copyright>TryPhotino 2022-2025</Copyright>
 
     <Product>Photino Samples VSCode Templates</Product>
     <Title>Photino Samples Project Templates for VS Code</Title>
@@ -21,8 +21,8 @@
 
     <PackageId>TryPhotino.VSCode.Project.Templates</PackageId>
     <PackageType>Template</PackageType>
-    <PackageVersion>2.3.1</PackageVersion>
-    <PackageProjectUrl>https:tryphotino.io</PackageProjectUrl>
+    <PackageVersion>3.2.3</PackageVersion>
+    <PackageProjectUrl>https://tryphotino.io</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageTags>dotnet-new;templates;photino;angular;vue;grpc;html;desktop</PackageTags>
 

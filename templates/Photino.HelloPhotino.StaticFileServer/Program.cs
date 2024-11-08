@@ -1,8 +1,11 @@
-﻿using System.Text;
-using PhotinoNET;
-using PhotinoNET.Server;
+using Photino.NET;
+using Photino.NET.Server;
+using System.Drawing;
+using System.Text;
 
 namespace Photino.HelloPhotino.StaticFileServer;
+//NOTE: To hide the console window, go to the project properties and change the Output Type to Windows Application.
+// Or edit the .csproj file and change the <OutputType> tag from "WinExe" to "Exe".
 
 class Program
 {
@@ -19,8 +22,12 @@ class Program
         // Creating a new PhotinoWindow instance with the fluent API
         var window = new PhotinoWindow()
             .SetTitle(windowTitle)
+            .SetUseOsDefaultSize(false)
+            .SetSize(new Size(2048, 1024))
             // Resize to a percentage of the main monitor work area
             //.Resize(50, 50, "%")
+            .SetUseOsDefaultSize(false)
+            .SetSize(new Size(800, 600))
             // Center window in the middle of the screen
             .Center()
             // Users can resize windows by default.

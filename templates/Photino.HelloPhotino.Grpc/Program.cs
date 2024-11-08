@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using PhotinoNET;
-using System;
+using Photino.NET;
 using System.Drawing;
-using System.IO;
 using System.Text;
 
 namespace HelloPhotino.GRpc
 {
+    //NOTE: To hide the console window, go to the project properties and change the Output Type to Windows Application.
+    // Or edit the .csproj file and change the <OutputType> tag from "WinExe" to "Exe".
+
     //https://github.com/grpc/grpc-web/tree/master/net/grpc/gateway/examples/helloworld#write-client-code
     class Program
     {
@@ -45,7 +46,8 @@ namespace HelloPhotino.GRpc
                 // PhotinoWindow was instantiated by calling a registration 
                 // method like the following RegisterWebMessageReceivedHandler.
                 // This could be added in the PhotinoWindowOptions if preferred.
-                .RegisterWebMessageReceivedHandler((object sender, string message) => {
+                .RegisterWebMessageReceivedHandler((object sender, string message) =>
+                {
                     var window = (PhotinoWindow)sender;
 
                     // The message argument is coming in from sendMessage.
@@ -57,7 +59,7 @@ namespace HelloPhotino.GRpc
                     window.SendWebMessage(response);
                 })
                 .Load("wwwroot/index.html"); // Can be used with relative path strings or "new URI()" instance to load a website.
-            
+
             window.WaitForClose();
         }
 
